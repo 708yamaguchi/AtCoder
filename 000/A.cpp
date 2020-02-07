@@ -8,6 +8,13 @@ using namespace std;
 #define REPL(i,m,n) for(ll i=(ll)(m); i<(ll)(n); i++)
 #define repl(i,n) REPL(i,0,n)
 #define all(v) v.begin(), v.end()
+#define check(val) cout << "\033[31m" << #val << ": " << val << "\033[m" << endl
+#define check_v(vec) \
+  do {                                    \
+    cout << "\033[31m" << #vec << ": [ "; \
+    for(auto e; v){cout << e << " ";}     \
+    cout << "]"<< "\033[m" << endl; }     \
+  while (0)
 // template<class t, class u>
 // ostream& operator<<(ostream& os, const pair<t, u>& p) {
 //   return os << "{" << p.first << ", " << p.second << "}";
@@ -37,4 +44,3 @@ const ll mod = 1e9+7;
 int main() {
   return 0;
 }
-
